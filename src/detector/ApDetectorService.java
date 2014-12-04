@@ -1,10 +1,8 @@
 package detector;
 
 
-import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.net.URI;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,9 +29,6 @@ public class ApDetectorService extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws IOException {
-		PrintWriter out = response.getWriter();
-		out.println("capo total!");
-		
 	}
 	
 	protected void doPost(HttpServletRequest request,
@@ -48,19 +43,18 @@ public class ApDetectorService extends HttpServlet {
 		 while (m.find()) {
 			 files.add(m.group(1));
 			 }
-		HashMap<String, Object> map = new HashMap<>();
+		
 		AntipatternDetector s = new AntipatternDetector();
 		ArrayList<HashMap<String, Object>> antiPatterns = new ArrayList<HashMap<String, Object>>();
 		try {
 			for(String url : files){
 			s.setWsdlUrl(new URL("file:" + DIRFILES + "/"+ url));
-			
+			HashMap<String, Object> map = new HashMap<>();
 			Antipattern[] result = s.analyze();
 			map.put("fileName", url);		
 			map.put("antiPatterns", result);
 			antiPatterns.add(map);
-			}
-			
+			}	
 			
 		} catch (Exception e) {
 			e.printStackTrace();
