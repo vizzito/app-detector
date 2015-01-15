@@ -2,10 +2,12 @@ package detector;
 
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintWriter;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -25,8 +27,11 @@ public class ApDetectorService extends HttpServlet {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private static final String DIRFILES = "/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer";
-
+	private static String DIRFILES;
+	public ApDetectorService() {
+		loadPropertyFile();
+		
+	}
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws IOException {
 	}
@@ -63,5 +68,30 @@ public class ApDetectorService extends HttpServlet {
 		String jsonResult = g.toJson(antiPatterns);
 		PrintWriter out = response.getWriter();
 		out.println(jsonResult);
+	}
+	
+	private void loadPropertyFile() {
+		Properties prop = new Properties();
+		InputStream input = null;
+		try {
+			String filename = "config.properties";
+    		input = ApDetectorService.class.getClassLoader().getResourceAsStream(filename);
+    		if(input==null){
+    	            System.out.println("Sorry, unable to find " + filename);
+    		    return;
+    		}
+    		prop.load(input);
+			DIRFILES = prop.getProperty("tomcat.dir");	 
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		} finally {
+			if (input != null) {
+				try {
+					input.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
 	}
 }
