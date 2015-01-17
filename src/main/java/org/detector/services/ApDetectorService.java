@@ -1,4 +1,4 @@
-package detector;
+package org.detector.services;
 
 
 import java.io.IOException;
@@ -19,6 +19,7 @@ import org.apache.commons.io.IOUtils;
 
 import com.google.gson.Gson;
 
+import detector.AntipatternDetector;
 import detector.antipattern.Antipattern;
 
 public class ApDetectorService extends HttpServlet {
