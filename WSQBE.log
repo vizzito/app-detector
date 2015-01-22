@@ -1,0 +1,118 @@
+20:44:35,861 INFO  edu.isistan.wsqbe.IRegistry - WSQBE Registry - Cargando configuración desde edu/isistan/wsqbe/registry.properties
+20:44:35,881 INFO  edu.isistan.wsqbe.IRegistry - Se utiliza la lista de stopwords desde el classpath edu/isistan/textmining/stoplist.txt
+20:44:35,912 WARN  detector.analyzer.AmbiguousNameAnalyzer - Set wordnet directory in java property: wordnet.database.dir
+20:44:35,912 WARN  detector.analyzer.AmbiguousNameAnalyzer - Set not recommended word patterns file: notRecommendedPatterns
+20:44:37,300 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading LengthNameAnalyzer
+20:44:37,301 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading UnrecommendedKeyWordsAnalyzer
+20:44:37,304 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading SyntacticMessagePartAnalyzer
+20:44:37,305 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading SyntacticOperatorAnalyzer
+20:44:38,843 DEBUG org.apache.wsif.* - ENTRY  WSIFWSDLLocatorImpl.<init><7e14d8e1>(<null>, <null>, <null>)
+20:44:38,843 DEBUG org.apache.wsif.* - EXIT   WSIFWSDLLocatorImpl.<init>()
+20:44:38,850 DEBUG edu.isistan.textmining.WSDLDocPreprocessor - Se omite portType: DatosInfoSumarialyDDJJSoap
+20:44:38,850 DEBUG edu.isistan.textmining.WSDLDocPreprocessor - Se omite portType: DatosInfoSumarialyDDJJHttpGet
+20:44:38,859 DEBUG detector.analyzer.structural.LengthNameAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosInfoSumarialyDDJJ.wsdl
+20:44:38,859 DEBUG detector.analyzer.words.UnrecommendedKeyWordsAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosInfoSumarialyDDJJ.wsdl
+20:44:38,863 DEBUG detector.analyzer.syntactic.SyntacticMessagePartAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosInfoSumarialyDDJJ.wsdl
+20:44:39,190 DEBUG detector.analyzer.syntactic.SyntacticOperatorAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosInfoSumarialyDDJJ.wsdl
+20:44:39,395 INFO  edu.isistan.wsqbe.IRegistry - WSQBE Registry - Cargando configuración desde edu/isistan/wsqbe/registry.properties
+20:44:39,407 INFO  edu.isistan.wsqbe.IRegistry - Se utiliza la lista de stopwords desde el classpath edu/isistan/textmining/stoplist.txt
+20:44:40,277 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading LengthNameAnalyzer
+20:44:40,277 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading UnrecommendedKeyWordsAnalyzer
+20:44:40,278 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading SyntacticMessagePartAnalyzer
+20:44:40,278 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading SyntacticOperatorAnalyzer
+20:44:40,653 DEBUG org.apache.wsif.* - ENTRY  WSIFWSDLLocatorImpl.<init><461edb5d>(<null>, <null>, <null>)
+20:44:40,653 DEBUG org.apache.wsif.* - EXIT   WSIFWSDLLocatorImpl.<init>()
+20:44:40,658 DEBUG edu.isistan.textmining.WSDLDocPreprocessor - Se omite portType: DatosInfoSumarialyDDJJSoap
+20:44:40,659 DEBUG edu.isistan.textmining.WSDLDocPreprocessor - Se omite portType: DatosInfoSumarialyDDJJHttpGet
+20:44:40,661 DEBUG detector.analyzer.structural.LengthNameAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosInfoSumarialyDDJJ.wsdl
+20:44:40,661 DEBUG detector.analyzer.words.UnrecommendedKeyWordsAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosInfoSumarialyDDJJ.wsdl
+20:44:40,664 DEBUG detector.analyzer.syntactic.SyntacticMessagePartAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosInfoSumarialyDDJJ.wsdl
+20:44:40,782 DEBUG detector.analyzer.syntactic.SyntacticOperatorAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosInfoSumarialyDDJJ.wsdl
+20:44:40,857 INFO  edu.isistan.wsqbe.IRegistry - WSQBE Registry - Cargando configuración desde edu/isistan/wsqbe/registry.properties
+20:44:40,870 INFO  edu.isistan.wsqbe.IRegistry - Se utiliza la lista de stopwords desde el classpath edu/isistan/textmining/stoplist.txt
+20:44:41,707 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading LengthNameAnalyzer
+20:44:41,707 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading UnrecommendedKeyWordsAnalyzer
+20:44:41,708 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading SyntacticMessagePartAnalyzer
+20:44:41,708 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading SyntacticOperatorAnalyzer
+20:44:42,141 DEBUG org.apache.wsif.* - ENTRY  WSIFWSDLLocatorImpl.<init><766b6084>(<null>, <null>, <null>)
+20:44:42,141 DEBUG org.apache.wsif.* - EXIT   WSIFWSDLLocatorImpl.<init>()
+20:44:42,145 DEBUG edu.isistan.textmining.WSDLDocPreprocessor - Se omite portType: DatosInfoSumarialyDDJJSoap
+20:44:42,145 DEBUG edu.isistan.textmining.WSDLDocPreprocessor - Se omite portType: DatosInfoSumarialyDDJJHttpGet
+20:44:42,147 DEBUG detector.analyzer.structural.LengthNameAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosInfoSumarialyDDJJ.wsdl
+20:44:42,147 DEBUG detector.analyzer.words.UnrecommendedKeyWordsAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosInfoSumarialyDDJJ.wsdl
+20:44:42,150 DEBUG detector.analyzer.syntactic.SyntacticMessagePartAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosInfoSumarialyDDJJ.wsdl
+20:44:42,220 DEBUG detector.analyzer.syntactic.SyntacticOperatorAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosInfoSumarialyDDJJ.wsdl
+20:44:42,287 INFO  edu.isistan.wsqbe.IRegistry - WSQBE Registry - Cargando configuración desde edu/isistan/wsqbe/registry.properties
+20:44:42,298 INFO  edu.isistan.wsqbe.IRegistry - Se utiliza la lista de stopwords desde el classpath edu/isistan/textmining/stoplist.txt
+20:44:43,148 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading LengthNameAnalyzer
+20:44:43,148 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading UnrecommendedKeyWordsAnalyzer
+20:44:43,149 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading SyntacticMessagePartAnalyzer
+20:44:43,149 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading SyntacticOperatorAnalyzer
+20:44:43,480 DEBUG org.apache.wsif.* - ENTRY  WSIFWSDLLocatorImpl.<init><30e6857a>(<null>, <null>, <null>)
+20:44:43,481 DEBUG org.apache.wsif.* - EXIT   WSIFWSDLLocatorImpl.<init>()
+20:44:43,486 DEBUG edu.isistan.textmining.WSDLDocPreprocessor - Se omite portType: DatosInfoSumarialyDDJJSoap
+20:44:43,486 DEBUG edu.isistan.textmining.WSDLDocPreprocessor - Se omite portType: DatosInfoSumarialyDDJJHttpGet
+20:44:43,488 DEBUG detector.analyzer.structural.LengthNameAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosInfoSumarialyDDJJ.wsdl
+20:44:43,488 DEBUG detector.analyzer.words.UnrecommendedKeyWordsAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosInfoSumarialyDDJJ.wsdl
+20:44:43,491 DEBUG detector.analyzer.syntactic.SyntacticMessagePartAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosInfoSumarialyDDJJ.wsdl
+20:44:43,551 DEBUG detector.analyzer.syntactic.SyntacticOperatorAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosInfoSumarialyDDJJ.wsdl
+20:45:05,991 INFO  edu.isistan.wsqbe.IRegistry - WSQBE Registry - Cargando configuración desde edu/isistan/wsqbe/registry.properties
+20:45:05,998 INFO  edu.isistan.wsqbe.IRegistry - Se utiliza la lista de stopwords desde el classpath edu/isistan/textmining/stoplist.txt
+20:45:06,751 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading LengthNameAnalyzer
+20:45:06,751 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading UnrecommendedKeyWordsAnalyzer
+20:45:06,752 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading SyntacticMessagePartAnalyzer
+20:45:06,752 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading SyntacticOperatorAnalyzer
+20:45:07,001 DEBUG org.apache.wsif.* - ENTRY  WSIFWSDLLocatorImpl.<init><694039d5>(<null>, <null>, <null>)
+20:45:07,002 DEBUG org.apache.wsif.* - EXIT   WSIFWSDLLocatorImpl.<init>()
+20:45:07,003 DEBUG edu.isistan.textmining.WSDLDocPreprocessor - Se omite portType: ConsultaDeHijosHttpPost
+20:45:07,003 DEBUG edu.isistan.textmining.WSDLDocPreprocessor - Se omite portType: ConsultaDeHijosHttpGet
+20:45:07,005 DEBUG detector.analyzer.structural.LengthNameAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/ConsultaDeHijos.wsdl
+20:45:07,005 DEBUG detector.analyzer.words.UnrecommendedKeyWordsAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/ConsultaDeHijos.wsdl
+20:45:07,007 DEBUG detector.analyzer.syntactic.SyntacticMessagePartAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/ConsultaDeHijos.wsdl
+20:45:07,042 DEBUG detector.analyzer.syntactic.SyntacticOperatorAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/ConsultaDeHijos.wsdl
+20:52:14,013 INFO  edu.isistan.wsqbe.IRegistry - WSQBE Registry - Cargando configuración desde edu/isistan/wsqbe/registry.properties
+20:52:14,024 INFO  edu.isistan.wsqbe.IRegistry - Se utiliza la lista de stopwords desde el classpath edu/isistan/textmining/stoplist.txt
+20:52:14,808 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading LengthNameAnalyzer
+20:52:14,808 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading UnrecommendedKeyWordsAnalyzer
+20:52:14,808 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading SyntacticMessagePartAnalyzer
+20:52:14,808 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading SyntacticOperatorAnalyzer
+20:52:18,201 INFO  edu.isistan.wsqbe.IRegistry - WSQBE Registry - Cargando configuración desde edu/isistan/wsqbe/registry.properties
+20:52:18,211 INFO  edu.isistan.wsqbe.IRegistry - Se utiliza la lista de stopwords desde el classpath edu/isistan/textmining/stoplist.txt
+20:52:18,992 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading LengthNameAnalyzer
+20:52:18,992 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading UnrecommendedKeyWordsAnalyzer
+20:52:18,993 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading SyntacticMessagePartAnalyzer
+20:52:18,993 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading SyntacticOperatorAnalyzer
+20:52:19,244 DEBUG org.apache.wsif.* - ENTRY  WSIFWSDLLocatorImpl.<init><7ef58f00>(<null>, <null>, <null>)
+20:52:19,244 DEBUG org.apache.wsif.* - EXIT   WSIFWSDLLocatorImpl.<init>()
+20:52:19,253 DEBUG edu.isistan.textmining.WSDLDocPreprocessor - Se omite portType: DatosdePersonaporCuipHttpPost
+20:52:19,253 DEBUG edu.isistan.textmining.WSDLDocPreprocessor - Se omite portType: DatosdePersonaporCuipHttpGet
+20:52:19,255 DEBUG detector.analyzer.structural.LengthNameAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosdePersonaporCuip.wsdl
+20:52:19,255 DEBUG detector.analyzer.words.UnrecommendedKeyWordsAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosdePersonaporCuip.wsdl
+20:52:19,256 DEBUG detector.analyzer.syntactic.SyntacticMessagePartAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosdePersonaporCuip.wsdl
+20:52:19,288 DEBUG detector.analyzer.syntactic.SyntacticOperatorAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosdePersonaporCuip.wsdl
+20:52:22,573 INFO  edu.isistan.wsqbe.IRegistry - WSQBE Registry - Cargando configuración desde edu/isistan/wsqbe/registry.properties
+20:52:22,582 INFO  edu.isistan.wsqbe.IRegistry - Se utiliza la lista de stopwords desde el classpath edu/isistan/textmining/stoplist.txt
+20:52:23,369 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading LengthNameAnalyzer
+20:52:23,369 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading UnrecommendedKeyWordsAnalyzer
+20:52:23,370 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading SyntacticMessagePartAnalyzer
+20:52:23,370 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading SyntacticOperatorAnalyzer
+20:52:23,599 DEBUG org.apache.wsif.* - ENTRY  WSIFWSDLLocatorImpl.<init><6ee633f2>(<null>, <null>, <null>)
+20:52:23,600 DEBUG org.apache.wsif.* - EXIT   WSIFWSDLLocatorImpl.<init>()
+20:52:23,604 DEBUG edu.isistan.textmining.WSDLDocPreprocessor - Se omite portType: DatosdePartidaHttpGet
+20:52:23,605 DEBUG edu.isistan.textmining.WSDLDocPreprocessor - Se omite portType: DatosdePartidaSoap
+20:52:23,607 DEBUG detector.analyzer.structural.LengthNameAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosdePartida.wsdl
+20:52:23,607 DEBUG detector.analyzer.words.UnrecommendedKeyWordsAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosdePartida.wsdl
+20:52:23,610 DEBUG detector.analyzer.syntactic.SyntacticMessagePartAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosdePartida.wsdl
+20:52:23,670 DEBUG detector.analyzer.syntactic.SyntacticOperatorAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/DatosdePartida.wsdl
+20:53:47,024 INFO  edu.isistan.wsqbe.IRegistry - WSQBE Registry - Cargando configuración desde edu/isistan/wsqbe/registry.properties
+20:53:47,033 INFO  edu.isistan.wsqbe.IRegistry - Se utiliza la lista de stopwords desde el classpath edu/isistan/textmining/stoplist.txt
+20:53:47,831 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading LengthNameAnalyzer
+20:53:47,831 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading UnrecommendedKeyWordsAnalyzer
+20:53:47,832 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading SyntacticMessagePartAnalyzer
+20:53:47,832 DEBUG detector.analyzer.AmbiguousNameAnalyzer - Loading SyntacticOperatorAnalyzer
+20:53:48,130 DEBUG org.apache.wsif.* - ENTRY  WSIFWSDLLocatorImpl.<init><2545c35>(<null>, <null>, <null>)
+20:53:48,130 DEBUG org.apache.wsif.* - EXIT   WSIFWSDLLocatorImpl.<init>()
+20:53:48,136 DEBUG detector.analyzer.structural.LengthNameAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/ServicioHLWB.wsdl
+20:53:48,136 DEBUG detector.analyzer.words.UnrecommendedKeyWordsAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/ServicioHLWB.wsdl
+20:53:48,136 DEBUG detector.analyzer.syntactic.SyntacticMessagePartAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/ServicioHLWB.wsdl
+20:53:48,164 DEBUG detector.analyzer.syntactic.SyntacticOperatorAnalyzer - Analyzing file:/home/panther/tomcat/apache-tomcat-7.0.52/webapps/ServiceClusterer/ServicioHLWB.wsdl
