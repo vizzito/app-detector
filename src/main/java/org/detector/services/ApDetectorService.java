@@ -83,7 +83,6 @@ public class ApDetectorService extends HttpServlet {
     		}
     		prop.load(input);
 			DIRFILES = prop.getProperty("tomcat.dir");
-			System.out.println("DIRFILES:DETECTOR::"+DIRFILES);
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		} finally {
