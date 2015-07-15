@@ -10,7 +10,8 @@ target/
  
 # Package Files #
 *.jar
-!libs/*.jar
+!libs/*/*/*/*.jar
+
 *.war
 *.ear
 *.db

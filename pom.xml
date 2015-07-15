@@ -25,7 +25,7 @@
 				<updatePolicy>always</updatePolicy>
 				<checksumPolicy>warn</checksumPolicy>
 			</releases>
-			<url>file:repo</url>
+			<url>file:libs</url>
 		</repository>
 	</repositories>
 	<build>
@@ -41,7 +41,7 @@
 				<directory>src/main/resources</directory>
 			</resource>
 			<resource>
-				<directory>repo</directory>
+				<directory>libs</directory>
 			</resource>
 		</resources>
 
