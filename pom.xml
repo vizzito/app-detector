@@ -4,7 +4,18 @@
 	<groupId>detector</groupId>
 	<artifactId>detector</artifactId>
 	<version>1.0</version>
-	<packaging>war</packaging>
+<!-- 	<packaging>war</packaging> -->
+	
+	  <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.2.5.RELEASE</version>
+    </parent>
+
+    <properties>
+        <java.version>1.7</java.version>
+    </properties>
+    
 	<build>
 		<sourceDirectory>src/main/java</sourceDirectory>
 		<resources>
@@ -20,44 +31,53 @@
 		</resources>
 		
 		<plugins>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>2.4</version>
-				<configuration>
-				<warSourceDirectory>WebContent</warSourceDirectory> 
-					<failOnMissingWebXml>false</failOnMissingWebXml>
-					<archive>
-						<manifest>
-							<addClasspath>true</addClasspath>
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>2.1</version>
-				<configuration>
-					<url>http://localhost:8080/manager/text</url>
-					<warFile>target/detector-1.0.war</warFile>
-					<server>tomcat</server>
-					<username>root</username>
-					<password>root</password>
-					<path>/detector</path>
-				</configuration>
-			</plugin>
+		  <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+		
+<!-- 			<plugin> -->
+<!-- 				<artifactId>maven-compiler-plugin</artifactId> -->
+<!-- 				<version>3.1</version> -->
+<!-- 				<configuration> -->
+<!-- 					<source>1.7</source> -->
+<!-- 					<target>1.7</target> -->
+<!-- 				</configuration> -->
+<!-- 			</plugin> -->
+<!-- 			<plugin> -->
+<!-- 				<groupId>org.apache.maven.plugins</groupId> -->
+<!-- 				<artifactId>maven-war-plugin</artifactId> -->
+<!-- 				<version>2.4</version> -->
+<!-- 				<configuration> -->
+<!-- 				<warSourceDirectory>WebContent</warSourceDirectory>  -->
+<!-- 					<failOnMissingWebXml>false</failOnMissingWebXml> -->
+<!-- 					<archive> -->
+<!-- 						<manifest> -->
+<!-- 							<addClasspath>true</addClasspath> -->
+<!-- 						</manifest> -->
+<!-- 					</archive> -->
+<!-- 				</configuration> -->
+<!-- 			</plugin> -->
+<!-- 			<plugin> -->
+<!-- 				<groupId>org.apache.tomcat.maven</groupId> -->
+<!-- 				<artifactId>tomcat7-maven-plugin</artifactId> -->
+<!-- 				<version>2.1</version> -->
+<!-- 				<configuration> -->
+<!-- 					<url>http://localhost:8080/manager/text</url> -->
+<!-- 					<warFile>target/detector-1.0.war</warFile> -->
+<!-- 					<server>tomcat</server> -->
+<!-- 					<username>root</username> -->
+<!-- 					<password>root</password> -->
+<!-- 					<path>/detector</path> -->
+<!-- 				</configuration> -->
+<!-- 			</plugin> -->
 		</plugins>
 	</build>
 	<dependencies>
+	 <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -76,7 +96,7 @@
 		<dependency>
 			<groupId>external</groupId>
 			<artifactId>ap-detector</artifactId>
-			<version>1.0</version>
+			<version>1.1</version>
 			<scope>compile</scope>
 		</dependency>
 	</dependencies>
