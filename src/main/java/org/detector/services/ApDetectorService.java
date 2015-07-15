@@ -3,11 +3,14 @@ package org.detector.services;
 import detector.AntipatternDetector;
 import detector.antipattern.Antipattern;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -17,6 +20,8 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import com.google.gson.Gson;
 
@@ -29,6 +34,8 @@ import com.google.gson.Gson;
 @RequestMapping("/detector")
 public class ApDetectorService
 {
+	private List<MultipartFile> listFiles;
+
 	@RequestMapping(value = "check", method = RequestMethod.GET)
 	protected void checkService(final HttpServletRequest request, final HttpServletResponse response) throws ServletException,
 			IOException
@@ -40,21 +47,18 @@ public class ApDetectorService
 	@RequestMapping(value = "ap-detector", method = RequestMethod.POST)
 	protected void detectorService(final HttpServletRequest request, final HttpServletResponse response) throws IOException
 	{
-		//		request.getParameter("files[]");
-		final String[] paramValues = request.getParameterValues("files[]");
+		listFiles = new ArrayList<MultipartFile>();
+		final MultipartHttpServletRequest mRequest = (MultipartHttpServletRequest) request;
+		final Iterator<String> itr = mRequest.getFileNames();
+		final ArrayList<String> paramValues = new ArrayList<String>();
+		while (itr.hasNext())
+		{
+			final MultipartFile mFile = mRequest.getFile(itr.next());
+			final String fileName = mFile.getOriginalFilename();
+			mFile.transferTo(new File("/tmp/" + fileName));
+			paramValues.add(fileName);
+		}
 
-
-		//	final MultipartHttpServletRequest mRequest = (MultipartHttpServletRequest) request;
-		//		String str_request = IOUtils.toString(request.getInputStream());
-		//		str_request = str_request + "&";
-		//		final String regex = "\\=([-0-9a-zA-Z.+_]*)\\&";
-		//		final Pattern p = Pattern.compile(regex);
-		//		final Matcher m = p.matcher(str_request);
-		//		final ArrayList<String> files = new ArrayList<String>();
-		//		while (m.find())
-		//		{
-		//			files.add(m.group(1));
-		//		}
 
 		final AntipatternDetector s = new AntipatternDetector();
 		final ArrayList<HashMap<String, Object>> antiPatterns = new ArrayList<HashMap<String, Object>>();
