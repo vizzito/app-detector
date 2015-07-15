@@ -40,6 +40,9 @@
 			<resource>
 				<directory>src/main/resources</directory>
 			</resource>
+			<resource>
+				<directory>repo</directory>
+			</resource>
 		</resources>
 
 		<plugins>
