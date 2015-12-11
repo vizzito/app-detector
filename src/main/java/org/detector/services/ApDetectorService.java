@@ -35,6 +35,7 @@ import com.google.gson.Gson;
 public class ApDetectorService
 {
 	private List<MultipartFile> listFiles;
+	public AntipatternDetector antiPatternDetector = null;
 
 	@RequestMapping(value = "check", method = RequestMethod.GET)
 	protected void checkService(final HttpServletRequest request, final HttpServletResponse response) throws ServletException,
@@ -60,15 +61,15 @@ public class ApDetectorService
 		}
 
 
-		final AntipatternDetector s = new AntipatternDetector();
+		antiPatternDetector = new AntipatternDetector();
 		final ArrayList<HashMap<String, Object>> antiPatterns = new ArrayList<HashMap<String, Object>>();
 		try
 		{
 			for (final String url : paramValues)
 			{
-				s.setWsdlUrl(new URL("file:/tmp/" + url));
+				antiPatternDetector.setWsdlUrl(new URL("file:/tmp/" + url));
 				final HashMap<String, Object> map = new HashMap<>();
-				final Antipattern[] result = s.analyze();
+				final Antipattern[] result = antiPatternDetector.analyze();
 				map.put("fileName", url);
 				map.put("antiPatterns", result);
 				antiPatterns.add(map);
